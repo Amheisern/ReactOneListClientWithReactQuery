@@ -17,9 +17,12 @@
     "useTabs": false
   },
   "dependencies": {
+    "module-name": "^0.0.1-security",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-query": "^3.38.0"
+    "react-query": "^3.38.0",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
