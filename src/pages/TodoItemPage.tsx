@@ -7,9 +7,9 @@ export function TodoItemPage() {
   const history = useNavigate()
   const params = useParams<{ id: string }>()
 
-  const { todoItem, isTodoItemLoading } = useLoadOneItem(params.id)
+  const { todoItem, isTodoItemLoading } = useLoadOneItem(params.id!)
 
-  const deleteMutation = useDeleteItemMutation(params.id, function () {
+  const deleteMutation = useDeleteItemMutation(params.id!, function () {
     history('/')
   })
 
